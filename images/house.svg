@@ -1241,11 +1241,11 @@
 				<circle fill="none" stroke="#715725" stroke-width="20" cx="487.8" cy="131.6" r="16.8" ng-click="toggleLights()"/>
 			</g>
 			<g class="off">
-				<rect fill="none" stroke="#715725" stroke-width="20" cx="495.8" cy="131.6" r="16.8" ng-click="toggleLights()"/>
+				<rect fill="none" cx="495.8" cy="131.6" width="15" height="15" ng-click="toggleLights()"/>
 			</g>
 			<g class="on"  ng-class="{'transparent': room.lights === undefined, 'solid': room.lights, 'almost-invisible': room.lights === false}">
 				<radialGradient id="SVGID_15_" cx="114.0073" cy="1324.8772" r="86.9963" gradientTransform="matrix(-3.9046 0 0 3.9046 932.0002 -5040.7002)" gradientUnits="userSpaceOnUse">
-					<stop  offset="0" style="stop-color:#FFCF01;stop-opacity:0.5"/>
+					<stop  offset="0" style="stop-color:#ff0000;stop-opacity:0.5"/>
 					<stop  offset="1" style="stop-color:#FFCF01;stop-opacity:0"/>
 				</radialGradient>
 				<path fill="url(#SVGID_15_)" d="M454.2,99.2h296v275.3H683c0,0,3.5,22.6-9.8,39.8c-12.1,15.6-38.3,27.3-38.3,27.3h-62.5
