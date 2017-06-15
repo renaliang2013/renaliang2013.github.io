@@ -115,6 +115,13 @@ module.exports = angular.module( "automation.controllers", ["automation.services
 			$scope.setRoom( $scope.name, room );
 		};
 
+		$scope.toggleCurtains = function () {
+			var room = Object.create( $scope.room );
+			room.lights = !room.lights;
+
+			$scope.setRoom( $scope.name, room );
+		};
+
 		// dontPersist is only necessary when loading defaults, we want to update the view without making a call to the server
 		$scope.$on( "update-room", function ( event, roomName, room, dontPersist ) {
 			if ( $scope.name === roomName ) {
