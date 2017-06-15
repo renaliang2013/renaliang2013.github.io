@@ -1239,7 +1239,7 @@
 		<g class="lights">
 			<g class="off">
 				<circle fill="none" stroke="#715725" stroke-width="20" cx="487.8" cy="131.6" r="16.8" ng-click="toggleLights()"/>
-				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleCurtains()"/>
+				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleLights()"/>
 			</g>
 			<g class="on"  ng-class="{'transparent': room.lights === undefined, 'solid': room.lights, 'almost-invisible': room.lights === false}">
 				<radialGradient id="SVGID_15_" cx="114.0073" cy="1324.8772" r="86.9963" gradientTransform="matrix(-3.9046 0 0 3.9046 932.0002 -5040.7002)" gradientUnits="userSpaceOnUse">
@@ -1248,22 +1248,22 @@
 				<path fill="url(#SVGID_15_)" d="M454.2,99.2h296v275.3H683c0,0,3.5,22.6-9.8,39.8c-12.1,15.6-38.3,27.3-38.3,27.3h-62.5
 					c0,0-25.8-7.4-37.9-23c-16.8-21.9-13.3-41.8-13.3-41.8l-69.1-0.4L454.2,99.2z"/>
 				<circle fill="none" stroke="#D7A648" stroke-width="20" cx="487.8" cy="131.6" r="16.8" ng-click="toggleLights()"/>
-				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleCurtains()"/>
+				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleLights()"/>
 			</g>
 		</g>
 		<g class="curtains">
-			<g class="off">
+			<g class="open">
 				<circle fill="none" stroke="#715725" stroke-width="20" cx="487.8" cy="131.6" r="16.8"/>
-				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleLights()"/>
+				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleCurtains())"/>
 			</g>
-			<g class="on"  ng-class="{'transparent': room.lights === undefined, 'solid': room.lights, 'almost-invisible': room.lights === false}">
+			<g class="close"  ng-class="{'transparent': room.lights === undefined, 'solid': room.lights, 'almost-invisible': room.lights === false}">
 				<radialGradient id="SVGID_15_" cx="114.0073" cy="1324.8772" r="86.9963" gradientTransform="matrix(-3.9046 0 0 3.9046 932.0002 -5040.7002)" gradientUnits="userSpaceOnUse">
 					<stop  offset="0" style="stop-color:#4c00ff;stop-opacity:0.5"/>
 				</radialGradient>
 				<path fill="url(#SVGID_15_)" d="M454.2,99.2h296v275.3H683c0,0,3.5,22.6-9.8,39.8c-12.1,15.6-38.3,27.3-38.3,27.3h-62.5
 					c0,0-25.8-7.4-37.9-23c-16.8-21.9-13.3-41.8-13.3-41.8l-69.1-0.4L454.2,99.2z"/>
 				<circle fill="none" stroke="#D7A648" stroke-width="20" cx="487.8" cy="131.6" r="16.8"/>
-				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleLights()"/>
+				<rect x="710.8" y="123.6" width="30" height="30" ng-click="toggleCurtains()"/>
 			</g>
 		</g>
 	</g>
