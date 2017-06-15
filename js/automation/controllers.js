@@ -117,7 +117,7 @@ module.exports = angular.module( "automation.controllers", ["automation.services
 
 		$scope.toggleCurtains = function () {
 			var room = Object.create( $scope.room );
-			room.lights = !room.lights;
+			room.curtains = !room.curtains;
 
 			$scope.setRoom( $scope.name, room );
 		};
